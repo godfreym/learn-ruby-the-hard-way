@@ -1,3 +1,3 @@
 name1 = 'Joe'
 name2 = 'Marry'
-puts "Hello %s, where is?" %[name1, name2]
+puts "Hello %s, where is %s?" %[name1, name2]
