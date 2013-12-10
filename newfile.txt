@@ -1,3 +1,3 @@
-Hello World,
-This is amazing.. Ruby is cool
-Thanks Martz
+Waoooh! Ruby is very cool
+I cant wait to use it in daily life
+I will make great things with Ruby
