@@ -52,3 +52,8 @@ sorted_sentence = Ex25.sort_sentence(sentence)
 first_and_last_sent = Ex25.print_first_and_last(sentence)
 
 puts "Broked words: #{words}"
+puts "sorted words: #{sorted_words}"
+puts "first word: #{first_word}"
+puts "first word sorted: #{first_word_sorted}"
+puts "sorted sentence: #{sorted_sentence}"
+puts "first and last: #{first_and_last_sent}"
