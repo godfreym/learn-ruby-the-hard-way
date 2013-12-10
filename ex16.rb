@@ -3,7 +3,7 @@ script =$0
 
 puts "We're going to erase #{filename}."
 puts "If you don't want that, hit CTRL-C (^C)."
-PUTS "If you do want that, hit RETURN."
+puts "If you do want that, hit RETURN."
 print "? "
 STDIN.gets
 
