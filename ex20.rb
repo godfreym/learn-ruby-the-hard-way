@@ -14,7 +14,7 @@ end
 
 current_file = File.open(input_file)
 puts "First let us print the whole file:"
-puts # a blank line_count
+
 
 print_all(current_file)
 puts # a blank line_count
