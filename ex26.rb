@@ -11,7 +11,7 @@ end
 
 # Prints the first word after popping it off.
 def puts_first_word(words)
-    word = words.pop()
+    word = words.shift()
     puts word
 end
 
