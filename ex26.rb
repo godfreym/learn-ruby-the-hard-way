@@ -59,7 +59,7 @@ puts "--------------"
 puts poem
 puts "--------------"
 
-five = 10 - 2 + 3 - 5
+five = 10 - 2 + 3 - 6
 puts "This should be five: %s" % five
 
 def secret_formula(started)
