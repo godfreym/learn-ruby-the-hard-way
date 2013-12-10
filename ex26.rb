@@ -93,6 +93,6 @@ puts_last_word(sorted_words)
 sorted_words = sort_sentence(sentence)
 print sorted_words
 
-puts_irst_and_last(sentence)
+puts_first_and_last(sentence)
 
-puts_first_a_last_sorted(senence)
+puts_first_and_last_sorted(sentence)
