@@ -45,14 +45,14 @@ end
 puts "Let's practice everything."
 puts "You\'d need to know \'bout escapes with \\ that do \nnewlines and \ttabs."
 
-poem = <<POEM
+poem = <<POEM_STRING
 \tThe lovely world
 with logic so firmly planted
 cannot discern \n the needs of love
 nor comprehend passion from intuition
 and requires an explantion
 \n\t\twhere there is none.
-POEM
+POEM_STRING
 
 
 puts "--------------"
