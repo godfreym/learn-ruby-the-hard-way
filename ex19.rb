@@ -21,12 +21,12 @@ puts "And we can combine the two, variables and math"
 cheese_and_crackers(amount_of_cheese + 100,amount_of_crackers + 1000)
 
 puts "Finally we can ask user to provide the numbers:"
-prompt=':>'
-puts "What is your first argument (number)?"
+prompt=' :>'
+print "What is your first argument (number)?"
 print prompt
 arg1 = STDIN.gets.chomp()
 
-puts "What is your second argument (number)?"
+print "What is your second argument (number)?"
 print prompt
 arg2 = STDIN.gets.chomp()
 
