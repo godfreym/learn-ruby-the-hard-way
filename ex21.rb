@@ -23,10 +23,12 @@ def add(a,b)
  height = subtract(78,4)
  weight = multiply(90,2)
  iq = divide(100,2)
-
+ 
+ puts # a blank line
  puts "Age: #{age}, Height: #{height}, Weight: #{weight}, IQ: #{iq}"
 
  # A puzzle for the extra credit, type it in anyway.
+ puts # a blank line
  puts "Here is the puzzle."
 
  what = add(age,subtract(height,multiply(weight,divide(iq,2))))
