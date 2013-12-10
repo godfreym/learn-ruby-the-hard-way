@@ -43,7 +43,7 @@ end
 
 
 puts "Let's practice everything."
-puts 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
+puts "You\'d need to know \'bout escapes with \\ that do \nnewlines and \ttabs."
 
 poem = <<POEM
 \tThe lovely world
