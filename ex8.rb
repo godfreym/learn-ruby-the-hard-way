@@ -7,6 +7,5 @@ puts formatter % [formatter, formatter, formatter, formatter]
 puts formatter % [
 	"I had this thing.",
 	"That you could type up right.",
-	"But it didn't sing."
-	"So I said goodnight."
-]
+	"But it didn't sing.",
+	"So I said goodnight."]
