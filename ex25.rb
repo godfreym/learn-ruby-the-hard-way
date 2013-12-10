@@ -42,3 +42,13 @@ module Ex25
   end
 
 end
+
+sentence = "All good things comes to those who waits"
+words = Ex25.break_words(sentence)
+sorted_words = Ex25.sort_words(words)
+first_word=Ex25.print_first_word(words)
+first_word_sorted=Ex25.print_first_word(sorted_words)
+sorted_sentence = Ex25.sort_sentence(sentence)
+first_and_last_sent = Ex25.print_first_and_last(sentence)
+
+puts "Broked words: #{words}"
