@@ -23,4 +23,5 @@ def add(a,b)
  height = subtract(78,4)
  weight = multiply(90,2)
  iq = divide(100,2)
- 
+
+ puts "Age: #{age}, Height: #{height}, Weight: #{weight}, IQ: #{iq}"
