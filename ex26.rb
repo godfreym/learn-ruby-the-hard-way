@@ -6,7 +6,7 @@ end
 
 # Sorts the words.
 def sort_words(words)
-    return sorted(words)
+    return words.sort()
 end
 
 # Prints the first word after popping it off.
