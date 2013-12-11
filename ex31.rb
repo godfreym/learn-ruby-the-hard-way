@@ -15,7 +15,7 @@ def prompt
   	if bear == "1"
   		puts "The bear eats your face off. Good jod!"
   	elsif bear == "2"
-  		puts "The bear eats yor legs off. Good job!"
+  		puts "The bear eats your legs off. Good job!"
   	else
   		puts "Well, doing #{bear} is probably better. Bear runs away."
   	end
