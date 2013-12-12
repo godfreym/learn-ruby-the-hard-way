@@ -11,7 +11,7 @@ def gold_room()
 		dead("Man learn to type a number.")
 	end
 
-	if how_much.number == true
+	if how_much < 50
 		puts "Nice, you're not greedy, you win!"
 		Process.exit(0)
 		else
@@ -31,7 +31,7 @@ def bear_room()
 
         if next_move == "take honey"
         	dead("The bear looks at you and then slaps your face off.")
-        elsif next_move == "taunt bear" or "kill" or "kill bear" and not bear_moved
+        elsif next_move == "taunt bear" or "kill" or "kill" and not bear_moved
         	puts "The bear has moved from the door. You can go through it now."
         	bear_moved = true
         elsif next_move == "taunt bear" and bear_moved
