@@ -1,3 +1,3 @@
 def prompt()
-puts "->"
+print "->"
 end
