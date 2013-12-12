@@ -55,6 +55,40 @@ alias
     arrays
     hashes
 
+# operators
+
+
+    ::
+    []
+    **
+    -(unary)
+    +(unary)
+    !
+    ~
+    *
+    /
+    %
+    +
+    -
+    <<
+    >>
+    &
+    |
+    >
+    >=
+    <
+    <=
+    <=>
+    ==
+    ===
+    !=
+    =~
+    !~
+    &&
+    ||
+    ..
+    ...
+
 # String escapes
 
     \\
@@ -67,4 +101,3 @@ alias
     \r
     \t
     \v
-
