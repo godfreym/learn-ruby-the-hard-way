@@ -7,7 +7,7 @@ while i < 6
 	i = i + 1
 
 	puts "Numbers now: #{numbers}"
-	puts "At the bottom i is #{i}"
+	puts "\n At the bottom i is #{i}"
 end
 
 puts "The numbers:"
