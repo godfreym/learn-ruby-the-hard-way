@@ -55,3 +55,16 @@ alias
     arrays
     hashes
 
+# String escapes
+
+    \\
+    \'
+    \"
+    \a
+    \b
+    \f
+    \n
+    \r
+    \t
+    \v
+
