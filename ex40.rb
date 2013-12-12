@@ -9,7 +9,7 @@ end
   # module ends here^
 
   # You can access apple as follows
-  require 'mystuff'
+ # require 'mystuff'
    MyStuff.apple()
    puts MyStuff::TANGERINE #this is the way to call a module's variable in separate file
 
@@ -17,16 +17,16 @@ end
    # There are 3 ways to get things from things
   
   # 1. hash style
-  mystuff['apples']
+    # mystuff['apples'] <--this works but to avoid error i commented it
 
   # 2. module style
-  mystuff.apples()
-  puts mystuff.tangerine
+      # mystuff.apples() <-- also this works but to avoid error i commented it
+      # puts mystuff.tangerine <-- also this works but to avoid error i commented it
   
   # 3. class style
-  thing = MyStuff.new()
-  thing.apples()
-  puts thing.tangerine
+    # thing = MyStuff.new() <-- also this works but to avoid error i commented it
+    # thing.apples() <-- also this works but to avoid error i commented it
+    # puts thing.tangerine <-- also this works but to avoid error i commented it
 
 
 
