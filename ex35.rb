@@ -11,7 +11,7 @@ def gold_room()
 		dead("Man learn to type a number.")
 	end
 
-	if how_much < 50
+	if how_much.number == true
 		puts "Nice, you're not greedy, you win!"
 		Process.exit(0)
 		else
