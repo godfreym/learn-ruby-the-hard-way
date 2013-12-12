@@ -56,7 +56,7 @@ def cthulhu_room()
 			else
 				cthulhu_room()
 			end
-		end
+end
 
 def dead(why)
 	puts "#{why} Good job!"
