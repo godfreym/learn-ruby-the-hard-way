@@ -86,7 +86,8 @@ class Game
         puts "wrong 10 times then the lock closes forever and you can't"
         puts "get the bomb.  The code is 3 digits."
 
-        code = "%s%s%s" %[rand(9)+1, rand(9)+1, rand(9)+1]
+        #code = "%s%s%s" %[rand(9)+1, rand(9)+1, rand(9)+1]
+        code = "123"
         print "[keypad]> "
         guess = gets.chomp()
         guesses = 0
