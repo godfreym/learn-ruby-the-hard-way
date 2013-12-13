@@ -74,7 +74,7 @@ class Child
 end
 
 son = Child.new
-puts "-----composition results------"
+puts "\n-----composition results------"
 son.implicit()
 son.override()
 son.altered()
