@@ -82,7 +82,7 @@ son.altered()
 
 # ----module implementation-----
 
-module Other
+module Other_mod
 	def Other.override()
 		puts "OTHER override()"
 	end
