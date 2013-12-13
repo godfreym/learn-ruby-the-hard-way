@@ -1,4 +1,4 @@
-require 'open-uri'
+require 'C:\Ruby200\lib\ruby\2.0.0\open-uri'
 
 WORD_URL = "http://learncodethehardway.org/words.txt"
 WORDS = []
