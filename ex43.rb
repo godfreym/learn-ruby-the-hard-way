@@ -91,7 +91,7 @@ class Game
         guess = gets.chomp()
         guesses = 0
 
-        while guess != code and guesses < 10
+        while guess != code and guesses < 9
         	puts "BZZZZZZEDDDD!"
         	guesses += 1
         	print "[keypad]> "
