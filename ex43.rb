@@ -43,7 +43,7 @@ class Game
          prompt()
          action = gets.chomp()
 
-         if action == "shoot" or "shoot!"
+         if action == "shoot" or action == "shoot!"
             
             puts "Quick on the draw you yank out your blaster and fire it at the Gothon."
             puts "His clown costume is flowing and moving around his body, which throws"
@@ -53,7 +53,7 @@ class Game
             puts "you are dead.  Then he eats you."
             return :death
 
-        elsif action == "dodge!" or "dodge"
+        elsif action == "dodge!" or action == "dodge"
         	  puts "Like a world class boxer you dodge, weave, slip and slide right"
               puts "as the Gothon's blaster cranks a laser past your head."
               puts "In the middle of your artful dodge your foot slips and you"
