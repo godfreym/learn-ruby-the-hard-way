@@ -70,3 +70,5 @@ end
 
  ## harry is-a Halibut
  harry = Halibut.new()
+
+ print "The name for a lovely cat is:", mary.pet
