@@ -26,3 +26,12 @@ end
 
 dad = Parent.new()
 son = Child.new()
+
+dad.implicity()
+son.implicity()
+
+dad.override()
+son.override()
+
+dad.altered()
+son.altered()
