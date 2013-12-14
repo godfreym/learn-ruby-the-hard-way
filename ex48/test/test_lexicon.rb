@@ -1,38 +1,55 @@
 require 'test/unit'
-require_relative '../lib/ex47'
+require_relative '../lib/lexicon'
 
-class MyUnitTests < Test::Unit::TestCase
-  
-  def test_room()
-    gold = Room.new("GoldRoom", 
-                    """This room has gold in it you can grab. There's a
-                door to the north.""")
-    assert_equal(gold.name, "GoldRoom")
-    assert_equal(gold.paths, {})
+class LexiconTests < Test::Unit::TestCase
+
+  Pair = Lexicon::Pair
+  @@lexicon = Lexicon.new()
+
+  def test_directions()
+    assert_equal([Pair.new(:direction, 'north')], @@lexicon.scan("north"))
+    result = @@lexicon.scan("north south east")
+    assert_equal(result, [Pair.new(:direction, 'north'),
+                 Pair.new(:direction, 'south'),
+                 Pair.new(:direction, 'east')])
   end
 
-  def test_room_paths()
-  	center = Room.new("Center", "The room in the center")
-  	north = Room.new("North", "The room in the north")
-  	south = Room.new("South", "The room in the south")
-
-  	center.add_paths({:north => north, :south => south})
-  	assert_equal(center.go(:north), north)
-  	assert_equal(center.go(:south), south)
+  def test_verbs()
+    assert_equal(@@lexicon.scan("go"), [Pair.new(:verb, 'go')])
+    result = @@lexicon.scan("go kill eat")
+    assert_equal(result, [Pair.new(:verb, 'go'),
+                 Pair.new(:verb, 'kill'),
+                 Pair.new(:verb, 'eat')])
   end
 
-  def test_map()
-  	start = Room.new("Start", "You can go west and down a hole.")
-  	west = Room.new("Trees", "There are trees here, you can go east.")
-  	down = Room.new("Dungeon", "It's dark down here, you can go up.")
-
-  	start.add_paths({:west => west, :down => down})
-  	west.add_paths({:east => start})
-  	down.add_paths({:up => start})
-
-  	assert_equal(start.go(:west), west)
-  	assert_equal(start.go(:west).go(:east), start)
-  	assert_equal(start.go(:down).go(:up), start)
+  def test_stops()
+    assert_equal(@@lexicon.scan("the"), [Pair.new(:stop, 'the')])
+    result = @@lexicon.scan("the in of")
+    assert_equal(result, [Pair.new(:stop, 'the'),
+                 Pair.new(:stop, 'in'),
+                 Pair.new(:stop, 'of')])
   end
-	
+
+  def test_nouns()
+    assert_equal(@@lexicon.scan("bear"), [Pair.new(:noun, 'bear')])
+    result = @@lexicon.scan("bear princess")
+    assert_equal(result, [Pair.new(:noun, 'bear'),
+                 Pair.new(:noun, 'princess')])
+  end
+
+  def test_numbers()
+    assert_equal(@@lexicon.scan("1234"), [Pair.new(:number, 1234)])
+    result = @@lexicon.scan("3 91234")
+    assert_equal(result, [Pair.new(:number, 3),
+                 Pair.new(:number, 91234)])
+  end
+
+  def test_errors()
+    assert_equal(@@lexicon.scan("ASDFADFASDF"), [Pair.new(:error, 'ASDFADFASDF')])
+    result = @@lexicon.scan("bear IAS princess")
+    assert_equal(result, [Pair.new(:noun, 'bear'),
+                 Pair.new(:error, 'IAS'),
+                 Pair.new(:noun, 'princess')])
+  end
+
 end
