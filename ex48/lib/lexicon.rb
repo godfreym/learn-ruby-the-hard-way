@@ -33,3 +33,5 @@
     end
     Pair = Struct.new(:token, :word)
 
+    # The code should be fixed for 6 failures
+
