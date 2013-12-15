@@ -8,4 +8,8 @@ require "erb"
     erb :index, :locals => {:greeting => greeting} 
   end
 
- 
+  get '/hello' do
+     name = params[:name] || "Nobody"
+     greeting = "Hello, #{name}"
+     erb :index, :locals => {:greeting => greeting}
+ end
