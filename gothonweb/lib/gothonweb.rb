@@ -1,9 +1,12 @@
 require_relative "gothonweb/version"
+require 'rubygems'
 require "sinatra"
 
-module Gothonweb
-  get '/' do
-  	greeting = "Hello, world!"
+
+    get '/' do
+
+  	greeting  = "Hello, world!"
   	return greeting
-  end
-end
+    
+    end
+ 
