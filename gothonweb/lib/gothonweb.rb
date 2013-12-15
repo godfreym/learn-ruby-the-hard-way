@@ -1,5 +1,9 @@
-require "gothonweb/version"
+require_relative "gothonweb/version"
+require "sinatra"
 
 module Gothonweb
-  # Your code goes here...
+  get '/' do
+  	greeting = "Hello, world!"
+  	return greeting
+  end
 end
