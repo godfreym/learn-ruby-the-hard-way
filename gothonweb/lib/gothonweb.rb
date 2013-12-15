@@ -1,13 +1,11 @@
 require_relative "gothonweb/version"
-require 'rubygems'
 require "sinatra"
 require "erb"
 
 
-    get '/' do
+  get '/' do
+    greeting = "Hello, World!"
+    erb :index, :locals => {:greeting => greeting} 
+  end
 
-  	greeting = "Hello, world!"
-  	return greeting
-    erb :index, :locals => {:greeting => greeting}
-    end
  
