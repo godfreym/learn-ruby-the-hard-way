@@ -5,7 +5,7 @@ require "sinatra"
 
     get '/' do
 
-  	greeting  = "Hello, world!"
+  	greeting = "Hello, world!"
   	return greeting
     
     end
