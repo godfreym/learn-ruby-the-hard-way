@@ -8,10 +8,12 @@ require "erb"
     erb :index, :locals => {:greeting => greeting} 
   end
 
+
   get '/hello' do
-  	 intro = params[:intro] || ' '
-     name = params[:name]  || "Nobody"
-     greet = params[:greet] || "Hola"
-     greeting = "#{intro}! #{name}, #{greet}"
+  	erb :hello_form
+  end
+  
+  post '/hello' do
+  	 greeting = "#{params[:greet] || "Hello"}, #{params[:name] || 'Nobody' }"
      erb :index, :locals => {:greeting => greeting}
  end
