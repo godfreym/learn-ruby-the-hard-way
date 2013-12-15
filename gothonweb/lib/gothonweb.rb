@@ -9,8 +9,9 @@ require "erb"
   end
 
   get '/hello' do
+  	 intro = params[:intro] || ' '
      name = params[:name]  || "Nobody"
      greet = params[:greet] || "Hola"
-     greeting = "#{greet}, #{name}"
+     greeting = "#{intro}! #{name}, #{greet}"
      erb :index, :locals => {:greeting => greeting}
  end
