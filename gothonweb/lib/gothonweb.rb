@@ -8,6 +8,6 @@ require "erb"
 
   	greeting = "Hello, world!"
   	return greeting
-    
+    erb :index, :locals => {:greeting => greeting}
     end
  
