@@ -14,6 +14,10 @@ class Room
 	def add_paths(paths)
 		@paths.update(paths)
 	end
+
+  def prompt()
+    print "->"
+  end
 end
 
 central_corridor = Room.new("central Corridor",
@@ -135,3 +139,5 @@ central_corridor.add_paths({
 
 
 START = central_corridor
+central_corridor.prompt()
+action = gets.chomp()
