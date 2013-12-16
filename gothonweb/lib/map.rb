@@ -142,3 +142,14 @@ START = central_corridor
 puts START.description
 central_corridor.prompt()
 action = gets.chomp()
+
+if action == "shoot!" || action == "shoot" || action == "dodge!" || action == "dodge"
+  puts generic_death.description
+
+  elsif action == "tell a joke" || action == "tell a joke!"
+    puts "\nEntering another room....."
+    puts laser_weapon_armory.description
+  else puts "Sorry, unknown choice made"
+
+end
+    
