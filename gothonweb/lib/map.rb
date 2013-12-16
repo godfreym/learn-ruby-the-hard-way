@@ -144,12 +144,46 @@ central_corridor.prompt()
 action = gets.chomp()
 
 if action == "shoot!" || action == "shoot" || action == "dodge!" || action == "dodge"
+  
   puts generic_death.description
 
   elsif action == "tell a joke" || action == "tell a joke!"
+    
     puts "\nEntering another room....."
     puts laser_weapon_armory.description
-  else puts "Sorry, unknown choice made"
+    laser_weapon_armory.prompt()
+      
+      action = gets.chomp()
+        
+        if action == "0132"
+           
+           puts "\nEntering another room....."
+           puts the_bridge.description
+           the_bridge.prompt()
+           action = gets.chomp()
 
+            if action == "throw the bomb"
+              puts generic_death.description
+            elsif action == "slowly place the bomb"
+              puts "\nEntering another room....."
+              puts escape_pod.description
+              escape_pod.prompt()
+                 action = gets.chomp()
+                      if action == "2"
+                        puts the_end_winner.description
+                      elsif action == "*"
+                        puts the_end_looser.description
+                      else 
+                         puts "Unknown choice made!"
+                      end
+            else puts "unknown choice made!"
+            end
+        
+        elsif action == "*"
+          puts generic_death.description
+        else
+            puts "unknown choice made!"
+        end
+  else puts "Sorry, unknown choice made"
 end
     
